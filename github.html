@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Git hub adding procedure</h1>
+GitHub HelpVersion 
+Contact Support
+Return to GitHub
+Managing files in a repository / Adding a file to a repository using the command line
+ 
+How can we help?
+
+Adding a file to a repository using the command line
+MAC WINDOWS LINUX
+You can upload an existing file to a GitHub repository using the command line.
+
+Tip: You can also add an existing file to a repository from the GitHub website.
+This procedure assumes you've already:
+
+Created a repository on GitHub, or have an existing repository owned by someone else you'd like to contribute to
+Cloned the repository locally on your computer
+Warning: Never git add, commit, or push sensitive information to a remote repository. Sensitive information can include, but is not limited to:
+
+Passwords
+SSH keys
+AWS access keys
+API keys
+Credit card numbers
+PIN numbers
+For more information, see "Removing sensitive data from a repository."
+On your computer, move the file you'd like to upload to GitHub into the local directory that was created when you cloned the repository.
+Open Terminal.
+
+Change the current working directory to your local repository.
+
+Stage the file for commit to your local repository.
+
+git add .
+# Adds the file to your local repository and stages it for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+Commit the file that you've staged in your local repository.
+
+git commit -m "Add existing file"
+# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+Push the changes in your local repository to GitHub.
+
+git push origin your-branch
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+Further reading
+
+"Creating new files"
+"Adding an existing project to GitHub using the command line"
+ Contact a human
+Article versions
+GitHub.com
+GitHub Enterprise 2.12
+GitHub Enterprise 2.11
+GitHub Enterprise 2.10
+The GitHub Logo © 2018 GitHub Inc. All rights reserved. Terms of ServicePrivacySecurity Support
+</body>
+</html>
